@@ -1,4 +1,4 @@
-let score ="35abc"
+/* let score ="35abc"
 
 console.log(typeof score)
 console.log(typeof(score))
@@ -12,7 +12,7 @@ console.log(scoreValueInNumber)
 let isLoggedIn= true
 let booleanIsLoggedIn=Boolean (isLoggedIn)
 
-console.log(booleanIsLoggedIn)
+console.log(booleanIsLoggedIn) */
 
 //"33" ==> 33
 //"33abc" ==> Nan
@@ -21,3 +21,9 @@ console.log(booleanIsLoggedIn)
 // boolean 0 value ==> false
 // boolean " " value ==> false
 // boolean "abc" value ==> true
+
+
+//=========================================Operation====================================
+
+console.log("1"+6+7)
+console.log(1+6+"7")
