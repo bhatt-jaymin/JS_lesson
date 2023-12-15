@@ -21,3 +21,16 @@ console.log(myAliasName.indexOf('y'))
 console.log(myFirstAliasName)
 console.log(mySecondAliasName)
 
+let myTrimStringOperation=new String("         Hello Java Script          ").trim()
+console.log(myTrimStringOperation)
+
+
+const StringURL="https://movie-viewer.com/viewport20%rating"
+console.log(StringURL.replace('20%','-'))
+
+console.log(StringURL.includes('20%'))
+console.log(StringURL.includes('html'))
+
+// ############# Different String Operations ####################
+
+
