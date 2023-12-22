@@ -40,17 +40,26 @@ console.log(StringURL.includes('html'))  ===> False
 
 ================Deleted in build String Function===================
 String.anchor()
+String.big()
+String.bold()
+String.blink()
+
 
 
 */
 let words=new String("Hello JS Community")
 
-/*
-let idx =-3  
-let idx2 =7
 
+let idx =-1
+let idx2 =7
+/*
 //console.log(`hello its my ${words.at(idx)} for everyone checking index of given words `)  ===> hello its my i for everyone checking index of given words
 //console.log(`hello its my ${words.at(idx2)} for everyone checking index of given words `) ===> hello its my s for everyone checking index of given words
 
+
+
+
 */
 
+// console.log(`hello its my ${words.charAt(idx)} for everyone checking index of given words `)  ===> hello its my[Blank space display if user set negative value] for everyone checking index of given words
+// console.log(`hello its my ${words.charAt(idx2)} for everyone checking index of given words `)   ===> hello its my s for everyone checking index of given words
