@@ -37,7 +37,20 @@ const mySecondAliasName= myFirstAliasName.slice(-8,3)
 console.log(StringURL.includes('20%'))   ===> True
 console.log(StringURL.includes('html'))  ===> False
 
+
+================Deleted in build String Function===================
+String.anchor()
+
+
 */
+let words=new String("Hello JS Community")
 
+/*
+let idx =-3  
+let idx2 =7
 
+//console.log(`hello its my ${words.at(idx)} for everyone checking index of given words `)  ===> hello its my i for everyone checking index of given words
+//console.log(`hello its my ${words.at(idx2)} for everyone checking index of given words `) ===> hello its my s for everyone checking index of given words
+
+*/
 
