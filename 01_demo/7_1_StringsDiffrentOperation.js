@@ -43,7 +43,9 @@ String.anchor()
 String.big()
 String.bold()
 String.blink()
-
+String.fixed()
+String.fontsize()
+String.fontcolor()
 
 
 */
@@ -52,6 +54,13 @@ let words=new String("Hello JS Community")
 
 let idx =-1
 let idx2 =7
+
+/*
+console.log(`Is given character ends with ${words.endsWith('Community',18)}`) ==> Is given character ends with true
+console.log(`Is given character ends with ${words.endsWith('Community')}`) ==> Is given character ends with true
+*/
+
+//console.log(`concate 2 different string is${words.concat (idx2)}`) ===> concate 2 different string is Hello JS Community 7
 /*
 //console.log(`hello its my ${words.at(idx)} for everyone checking index of given words `)  ===> hello its my i for everyone checking index of given words
 //console.log(`hello its my ${words.at(idx2)} for everyone checking index of given words `) ===> hello its my s for everyone checking index of given words
@@ -63,3 +72,6 @@ let idx2 =7
 
 // console.log(`hello its my ${words.charAt(idx)} for everyone checking index of given words `)  ===> hello its my[Blank space display if user set negative value] for everyone checking index of given words
 // console.log(`hello its my ${words.charAt(idx2)} for everyone checking index of given words `)   ===> hello its my s for everyone checking index of given words
+
+// console.log(`hello its checking UTI-16 code of ${words.charCodeAt(idx2)}  index given of words is ${words.charAt(idx2)}`)   ===> hello its checking UTI-16 code of 83  index given of words is S
+
