@@ -49,11 +49,15 @@ String.fontcolor()
 
 
 */
-let words=new String("Hello JS Community")
+let words=new String("Hello JS Community JS is popular in web devloping")
 
 
 let idx =-1
 let idx2 =7
+
+
+let serchword='JS'
+let serchStringWords=words.indexOf(serchword)
 
 /*
 console.log(`Is given character ends with ${words.endsWith('Community',18)}`) ==> Is given character ends with true
@@ -74,4 +78,12 @@ console.log(`Is given character ends with ${words.endsWith('Community')}`) ==> I
 // console.log(`hello its my ${words.charAt(idx2)} for everyone checking index of given words `)   ===> hello its my s for everyone checking index of given words
 
 // console.log(`hello its checking UTI-16 code of ${words.charCodeAt(idx2)}  index given of words is ${words.charAt(idx2)}`)   ===> hello its checking UTI-16 code of 83  index given of words is S
+
+
+/*
+console.log(`hello its checking  ${serchword} word position at ${serchStringWords} `)   ===>  hello its checking  JS word position at 6 
+console.log(`hello its checking  ${serchword} word position at ${words.indexOf(serchword,serchStringWords+1)} `)   ===> hello its checking  JS word position at 19
+*/
+
+//isWellFormed() --> check UTF-16 String available or not in URl or any String return boolean value
 
