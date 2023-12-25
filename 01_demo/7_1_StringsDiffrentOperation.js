@@ -46,6 +46,8 @@ String.blink()
 String.fixed()
 String.fontsize()
 String.fontcolor()
+String.italics()
+
 
 
 */
@@ -58,6 +60,7 @@ let idx2 =7
 
 let serchword='JS'
 let serchStringWords=words.indexOf(serchword)
+let serchLastStringWords=words.lastIndexOf(serchword)
 
 /*
 console.log(`Is given character ends with ${words.endsWith('Community',18)}`) ==> Is given character ends with true
@@ -83,7 +86,16 @@ console.log(`Is given character ends with ${words.endsWith('Community')}`) ==> I
 /*
 console.log(`hello its checking  ${serchword} word position at ${serchStringWords} `)   ===>  hello its checking  JS word position at 6 
 console.log(`hello its checking  ${serchword} word position at ${words.indexOf(serchword,serchStringWords+1)} `)   ===> hello its checking  JS word position at 19
+
+console.log(`hello its checking  ${serchword} last word position at ${serchLastStringWords}`)  ===> ===> hello its checking  JS word position at 19
+
+===> indexOf inbuilt String function case sensitive
+
+===> lastindexOf inbuilt String function case sensitive
+
 */
 
 //isWellFormed() --> check UTF-16 String available or not in URl or any String return boolean value
+
+
 
