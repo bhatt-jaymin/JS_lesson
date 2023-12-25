@@ -60,12 +60,26 @@ let idx2 =7
 let word_a='WORD'
 let word_b='word'
 
+let cardNumber='90907856709';
+let printCardNumber=cardNumber.slice(-4); // Always put initialize variable in String type
+let encryptCardNumber=printCardNumber.padStart(cardNumber.length,'*');
+
+
 
 let serchword='JS'
 let serchStringWords=words.indexOf(serchword)
 let serchLastStringWords=words.lastIndexOf(serchword)
 
+
+
+/* 
+let repeatWord=' everywhere '
+console.log(`here ${repeatWord.repeat(3)}`) ===> here  everywhere  everywhere  everywhere 
+*/
+
 //console.log(`Here compare of ${word_a.localeCompare(word_b)}`) ===> Here compare of 1
+
+// console.log(encryptCardNumber) ===> *******6709
 
 /*
 console.log(`Is given character ends with ${words.endsWith('Community',18)}`) ==> Is given character ends with true
@@ -105,4 +119,3 @@ console.log(`hello its checking  ${serchword} last word position at ${serchLastS
 // Normalize :--> Value return Unicode Normalize
 
 //console.log(`here ${word_a.padEnd(12,'.')}`) ===> here WORD........
-
