@@ -47,7 +47,7 @@ String.fixed()
 String.fontsize()
 String.fontcolor()
 String.italics()
-
+String.link()
 
 
 */
@@ -57,10 +57,15 @@ let words=new String("Hello JS Community JS is popular in web devloping")
 let idx =-1
 let idx2 =7
 
+let word_a='WORD'
+let word_b='word'
+
 
 let serchword='JS'
 let serchStringWords=words.indexOf(serchword)
 let serchLastStringWords=words.lastIndexOf(serchword)
+
+console.log(`Here compare of ${word_a.localeCompare(word_b)}`)
 
 /*
 console.log(`Is given character ends with ${words.endsWith('Community',18)}`) ==> Is given character ends with true
@@ -96,6 +101,6 @@ console.log(`hello its checking  ${serchword} last word position at ${serchLastS
 */
 
 //isWellFormed() --> check UTF-16 String available or not in URl or any String return boolean value
-
+// Compare & Compare All : ---> Check and Compare Regex in String 
 
 
