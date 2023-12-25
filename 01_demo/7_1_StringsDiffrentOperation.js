@@ -65,7 +65,7 @@ let serchword='JS'
 let serchStringWords=words.indexOf(serchword)
 let serchLastStringWords=words.lastIndexOf(serchword)
 
-console.log(`Here compare of ${word_a.localeCompare(word_b)}`)
+//console.log(`Here compare of ${word_a.localeCompare(word_b)}`) ===> Here compare of 1
 
 /*
 console.log(`Is given character ends with ${words.endsWith('Community',18)}`) ==> Is given character ends with true
@@ -101,6 +101,8 @@ console.log(`hello its checking  ${serchword} last word position at ${serchLastS
 */
 
 //isWellFormed() --> check UTF-16 String available or not in URl or any String return boolean value
-// Compare & Compare All : ---> Check and Compare Regex in String 
+// Match & Match All : ---> Check and Compare Regex in String 
+// Normalize :--> Value return Unicode Normalize
 
+//console.log(`here ${word_a.padEnd(12,'.')}`) ===> here WORD........
 
