@@ -50,6 +50,10 @@ String.fontcolor()
 String.italics()
 String.link()
 String.small()
+String.strike()
+String.sub()
+String.substr()
+String.sup()
 
 */
 
