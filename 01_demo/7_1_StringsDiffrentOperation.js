@@ -33,6 +33,7 @@ const mySecondAliasName= myFirstAliasName.slice(-8,3)
 /*const StringURL="https://movie-viewer.com/viewport20%rating"
  console.log(StringURL.replace('20%','-')) ===> https://movie-viewer.com/viewport-rating  
 
+ Here replace and replace all functionality working same
 
 console.log(StringURL.includes('20%'))   ===> True
 console.log(StringURL.includes('html'))  ===> False
@@ -48,10 +49,11 @@ String.fontsize()
 String.fontcolor()
 String.italics()
 String.link()
-
+String.small()
 
 */
-let words=new String("Hello JS Community JS is popular in web devloping")
+
+let words=new String("Hello JS Community JS is popular in Community")
 
 
 let idx =-1
@@ -70,9 +72,15 @@ let serchword='JS'
 let serchStringWords=words.indexOf(serchword)
 let serchLastStringWords=words.lastIndexOf(serchword)
 
+// console.log(words.search('Community')) ===> 9
 
+//
 
-/* 
+//console.log(`${words.replaceAll('Community','Web Devloping Community')}`) ===> Hello JS Web Devloping Community JS is popular in Web Devloping Community
+
+/*
+let words=new String("Hello JS Community JS is popular in web devloping in entire world") ===> Hello JS Web Devloping Community JS is popular in web devloping
+
 let repeatWord=' everywhere '
 console.log(`here ${repeatWord.repeat(3)}`) ===> here  everywhere  everywhere  everywhere 
 */
@@ -119,3 +127,33 @@ console.log(`hello its checking  ${serchword} last word position at ${serchLastS
 // Normalize :--> Value return Unicode Normalize
 
 //console.log(`here ${word_a.padEnd(12,'.')}`) ===> here WORD........
+
+
+
+/* Split Function
+
+console.log(words.split('')[6]) ===> J
+
+console.log(words.split(' '))
+
+[
+    'Hello',     'JS',
+    'Community', 'JS',
+    'is',        'popular',
+    'in',        'Community'
+]
+
+console.log(words.split('')[3]) ===> JS
+
+console.log(words.split(''))
+
+[
+    'H', 'e', 'l', 'l', 'o', ' ', 'J', 'S',
+    ' ', 'C', 'o', 'm', 'm', 'u', 'n', 'i',
+    't', 'y', ' ', 'J', 'S', ' ', 'i', 's',
+    ' ', 'p', 'o', 'p', 'u', 'l', 'a', 'r',
+    ' ', 'i', 'n', ' ', 'C', 'o', 'm', 'm',
+    'u', 'n', 'i', 't', 'y'
+  ]
+
+*/
