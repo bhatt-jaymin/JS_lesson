@@ -39,3 +39,31 @@ console.log(count.toPrecision(3)) ===> 235
 // =================== MATHS ==========================
 
 
+let no1=25
+let no2=52.3
+
+
+//console.log(Math.floor(no2)) ===> 52
+
+//console.log(Math.max(no2,no1)) ===> 52.6
+
+//console.log(Math.min(no2,no1)) ===> 25
+
+//console.log(Math.round(no2)) ===> if decimal above 50 value change (52 & 53)
+
+// abs function convert only negative to positive value
+
+
+
+
+/*  Random Math Function
+
+console.log(Math.random())
+console.log(Math.floor((Math.random()*6)+1))
+
+
+let min=25
+let max=70
+
+console.log(Math.floor(Math.random()*(max-min + 1 + min))) // Formula for Math random function 
+ */
