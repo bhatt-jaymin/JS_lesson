@@ -156,4 +156,9 @@ console.log(words.split(''))
     'u', 'n', 'i', 't', 'y'
   ]
 
+console.log(words.startsWith('2He')) ===> false
+
+console.log(words.startsWith('He')) ===> true
+
 */
+
