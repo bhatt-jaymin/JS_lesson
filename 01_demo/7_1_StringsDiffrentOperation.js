@@ -67,6 +67,7 @@ let word_a='WORD'
 let word_b='word'
 
 let cardNumber='90907856709';
+let cardNumber2=new Number (90907856709);
 let printCardNumber=cardNumber.slice(-4); // Always put initialize variable in String type
 let encryptCardNumber=printCardNumber.padStart(cardNumber.length,'*');
 
@@ -78,7 +79,8 @@ let serchLastStringWords=words.lastIndexOf(serchword)
 
 // console.log(words.search('Community')) ===> 9
 
-//
+
+// console.log(typeof cardNumber2.toString()) ==>  convert any type into String also value of function return value String
 
 //console.log(`${words.replaceAll('Community','Web Devloping Community')}`) ===> Hello JS Web Devloping Community JS is popular in Web Devloping Community
 
@@ -164,5 +166,16 @@ console.log(words.startsWith('2He')) ===> false
 
 console.log(words.startsWith('He')) ===> true
 
+// Sub String
+
+console.log(words.substring(7))  ===> S Community JS is popular in Community
+
+console.log(words.substring(7,15)) ===> S Commun
+
+console.log(words.substring(-7,-15)) ===> blank
+
+console.log(words.substring(-7,15)) ===> Hello JS Commun
+
+console.log(words.substring(7,-15)) ===> Hello J
 */
 
