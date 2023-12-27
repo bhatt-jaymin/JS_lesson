@@ -33,7 +33,14 @@ console.log(Array.isArray("Jaimin"));===> False // check array available or not
 console.log(Array.from("Jaimin"));===> [ 'J', 'a', 'i', 'm', 'i', 'n' ] //Adding new array
 
 console.log(Array.from({name:"jaimin"}));[]  // Interesting Array is not define  
+
+
+let score1 =100
+let score2 =200
+let score3 =300
+
+console.log(Array.of(score1,score2,score3));
+
+[ 100, 200, 300 ]
+
 */
-
-
-console.log(Array.from({name:"jaimin"}));
