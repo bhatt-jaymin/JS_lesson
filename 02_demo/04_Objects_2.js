@@ -109,4 +109,27 @@ console.log(Object.entries(myNewObj));
 console.log(myNewObj.hasOwnProperty("name"));// check property is available or not
 */
 
-console.log(myNewObj.hasOwnProperty("name"));
+
+//====================================
+
+const Course={
+    courseId:"E1001",
+    courseName:"JS Full Course",
+    courseInstructor:"Hitesh",
+    coursePlatform:"Youtube",
+    fees:0.00,
+    isPaid:false
+}
+
+const  {courseInstructor:instructor,courseName}=Course;
+console.log(instructor,courseName);
+
+/*
+Destructure Object
+
+const  {courseInstructor:instructor,courseName}=Course;
+console.log(instructor,courseName);
+
+Hitesh JS Full Course
+
+*/
