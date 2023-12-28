@@ -1,3 +1,6 @@
+
+// Object Literals
+
 const myNewSym=Symbol("myKey1")
 
 const myNewObj={
