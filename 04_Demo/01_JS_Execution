@@ -1,0 +1,24 @@
+// Global Execution Context {} this
+
+// Functional Execution Context
+
+// Eval Execution Context
+
+/* JS Cycle Execution
+{}===> Memory Execution Phase // Assign value like variable,array,object
+  ===> Execution Phase // do functional activity like add,mul,div
+
+*/
+
+
+/*
+
+call Stack [Lifo Method]
+
+--> third
+--> Second
+--> first  
+--> Global Execution
+
+*/
+
