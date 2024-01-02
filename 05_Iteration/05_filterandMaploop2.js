@@ -1,70 +1,18 @@
-// Filter and Map 
+// Filter and Map 2
 
-/* const newCodingArrowArray=['JS','CPP','ruby','py','css']
+const newCodingNums=[0,1,2,3,4,5,6,7,8,9,10]
 
-const newVal=newCodingArrowArray.forEach( (arrowArryItem)=>{
-    console.log(arrowArryItem);
-})
- */
+/*let newNums=newCodingNums.map((num)=>num+10)
+console.log(newNums);
 
-/* const newCodingNums=[1,2,3,4,5,6,7,8,9,0]
-
-//const myNewnumber= newCodingNums.filter((Numitem)=> Numitem > 5 )
-//console.log(myNewnumber); // ===> [ 6, 7, 8, 9 ]
-const myNewnumber= newCodingNums.filter((Numitem)=> {
-    return Numitem > 3
-} )
-console.log(myNewnumber); // ===> [ 4, 5, 6, 7, 8, 9 ] */
-
-const books = [
-    { title: 'Book One', genre: 'Fiction', publish: 1981, edition: 2004 },
-    { title: 'Book Two', genre: 'Non-Fiction', publish: 1992, edition: 2008 },
-    { title: 'Book Three', genre: 'History', publish: 1999, edition: 2007 },
-    { title: 'Book Four', genre: 'Non-Fiction', publish: 1989, edition: 2010 },
-    { title: 'Book Five', genre: 'Science', publish: 2009, edition: 2014 },
-    { title: 'Book Six', genre: 'Fiction', publish: 1987, edition: 2010 },
-    { title: 'Book Seven', genre: 'History', publish: 1986, edition: 1996 },
-    { title: 'Book Eight', genre: 'Science', publish: 2011, edition: 2016 },
-    { title: 'Book Nine', genre: 'Non-Fiction', publish: 1981, edition: 1989 },
-  ];
-
-  //let userBooks=books.filter((myBook)=> myBook.publish>=2000)
-  //console.log(userBooks);
-/*
 [
-  {
-    title: 'Book Five',
-    genre: 'Science',
-    publish: 2009,
-    edition: 2014
-  },
-  {
-    title: 'Book Eight',
-    genre: 'Science',
-    publish: 2011,
-    edition: 2016
-  }
-]
+  10, 11, 12, 13, 14,
+  15, 16, 17, 18, 19,
+  20
+]*/
 
-*/
-  let userBooks2=books.filter((myBook) => {return  myBook.genre==='History'})
-  console.log(userBooks2);
-
-  /*
-    {
-    title: 'Book Three',
-    genre: 'History',
-    publish: 1999,
-    edition: 2007
-  },
-  {
-    title: 'Book Seven',
-    genre: 'History',
-    publish: 1986,
-    edition: 1996
-  }
-]
-  
-  
-  
-  */
+let newNums2=newCodingNums
+            .map((num)=>num*10)
+            .map((num)=>num+10)
+            .filter((num)=>num>50)
+console.log(newNums2); // [ 60, 70, 80, 90, 100, 110 ]
