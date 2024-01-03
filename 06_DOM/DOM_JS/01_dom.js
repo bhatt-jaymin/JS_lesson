@@ -38,3 +38,17 @@ newLiTemp.forEach(function (li){
     li.style.backgroundColor='wheat'
 })
 */
+
+/*
+
+Array.from(myGrpLiItem)
+*/
+
+
+/* convert into array
+const myConvrtArry=Array.from(myGrpLiItem)
+
+myConvrtArry.forEach(function (liitm){
+    liitm.style.color="orange"
+})
+*/
