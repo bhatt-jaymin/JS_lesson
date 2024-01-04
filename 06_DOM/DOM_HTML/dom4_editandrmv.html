@@ -6,6 +6,38 @@
     <title>DOM | Edit and Remove </title>
 </head>
 <body style="color: aliceblue;background-color: black;">
-    
+   <ul class="language">
+    <li>JavaScript</li>
+   </ul> 
 </body>
+<script>
+    function addLng(lngName) {
+        const addUnordList= document.createElement('li');
+        addUnordList.innerHTML=`${lngName}`
+        document.querySelector('.language').appendChild(addUnordList)
+    }
+    addLng(`TypeScript`)
+    addLng(`Python`)
+
+    function addOptLng(lngName) {
+        const addUnordList= document.createElement('li');
+        addUnordList.appendChild(document.createTextNode(lngName))
+        document.querySelector('.language').appendChild(addUnordList)
+    }
+    addOptLng(`Java`)
+
+    //edit in Child nodes
+
+    const editLi=document.querySelector('li:nth-child(2)')
+    const newli=document.createElement('li')
+    editLi.textContent="Spring Boot"
+    newli.replaceWith(editLi)
+
+    // remove in child nodes
+
+    const rmvLi=document.querySelector('li:last-child')
+    rmvLi.remove()
+
+
+</script>
 </html>
