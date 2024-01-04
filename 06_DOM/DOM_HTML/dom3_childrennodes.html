@@ -5,7 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM | children nodes</title>
 </head>
-<body>
+<body style="background-color: black;color: aliceblue;">
     
 </body>
+<script>
+    const div =document.createElement('div')
+    console.log(div);
+    div.className="main"
+    div.id=Math.round(Math.random()*10+1)
+    div.setAttribute("title","generated Title")
+    div.style.backgroundColor="wheat"
+    div.style.padding="12px"
+    //div.innerText="JS World"
+    const addTxt=document.createTextNode('JS World')
+    div.appendChild(addTxt)
+
+    document.body.appendChild(div)
+</script>
 </html>
