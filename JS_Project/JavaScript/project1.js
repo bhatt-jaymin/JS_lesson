@@ -14,6 +14,8 @@ btns.forEach(function (btn) {
             bdy.style.backgroundColor=evnt.target.id;
         }else if(evnt.target.id==="yellow"){
             bdy.style.backgroundColor=evnt.target.id;
+        }else if(evnt.target.id==="wheat"){
+            bdy.style.backgroundColor=evnt.target.id;
         }
 
     })
