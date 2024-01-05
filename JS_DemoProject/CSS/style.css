@@ -6,7 +6,6 @@
     background-color: #797978;
     padding-left: 30px;
   }
-  
   #height,
   #weight {
     width: 150px;
@@ -25,25 +24,38 @@
     margin-top: 20px;
     color: rgb(241, 241, 241);
   }
+
+  p{
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
   
   button {
     width: 150px;
     height: 35px;
     margin-left: 90px;
-    margin-top: 25px;
+    margin-top: 40px;
     background-color: #fff;
     padding: 1px 30px;
-    border-radius: 8px;
+    border-radius: 25px;
     color: #212121;
     text-decoration: none;
     border: 2px solid #212121;
-  
     font-size: 25px;
   }
   
   h1 {
     padding-left: 90px;
-    padding-top: 100px;
-    
+    padding-top: 36px;
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;    
+  }
+
+  .lbl{
+    padding: 50px;
+    text-align: center;
   }
   
