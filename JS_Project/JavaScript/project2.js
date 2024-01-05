@@ -15,10 +15,17 @@ form.addEventListener('submit',function (frmsubmit){
         console.log(`Invalid ${weight} Weight Value`);
 
     }else{
-        const BMI=(weight/((height*height)/10000)).toFixed(2)
-        results.innerHTML=<span>`${BMI}`</span>
+        const BMI= (weight / ((height * height) / 10000)).toFixed(2);;
+        //results.innerHTML=`<span>${BMI}</span>`
+        if(BMI<18.6){
+            results.innerHTML=`<br><span> BMI value is ${BMI} Person is Under weight </span></br>`
+        }else if(BMI>=18.6 && BMI<24.9){
+            results.innerHTML=`<br><span> BMI value is ${BMI} Person is Normal weight </span></br>`
+        }else if(BMI>24.9){
+            results.innerHTML=`<br><span> BMI value is ${BMI} Person is Overweight </span></br>`
+        }
         console.log(`${BMI}`);
+        
+       
     }
-
-    //console.log(`Data added Successfully ${results}`);
 });
