@@ -1,31 +1,51 @@
 const form=document.querySelector('form')
 
-form.addEventListener('submit',function (frmsubmit){
+form.addEventListener('submit',function (frmsubmit) {
     frmsubmit.preventDefault();
 
-    const height= parseInt(document.querySelector('#height').value);
-    const weight= parseInt(document.querySelector('#weight').value);
-    const results= document.querySelector('#results');
+    const name=document.querySelector('#name');
+    const roll=parseInt(document.querySelector('#Rollno').value);
+    const sub1=parseInt(document.querySelector('#sub1').value);
+    const sub2=parseInt(document.querySelector('#sub2').value);
+    const sub3=parseInt(document.querySelector('#sub3').value);
+    const sub4=parseInt(document.querySelector('#sub4').value);
+    const sub5=parseInt(document.querySelector('#sub5').value);
+    const Msg=document.querySelector('#Msg');
+    const Marks=document.querySelector('#Mrks');
+    const Percentage=document.querySelector('#prcnt');
 
-    if (height === ' '|| height < 0 || isNaN(height)) {
-        results.innerHTML=`Invalid ${height} Input Value`;
-        console.log(`Invalid ${height} Height Value`);
-    }else if (weight === ' '|| weight < 0 || isNaN(weight)) {
-        results.innerHTML=`Invalid ${weight} Input Value`;
-        console.log(`Invalid ${weight} Weight Value`);
-
+    if(name===''||name===0||name>=0||name<=0)
+    {
+        Msg.innerHTML=`<span> <h4> Invalid Name </h4> </span>`;
+    }else if (roll===''||roll<=0) {
+        Msg.innerHTML=`<span> <h4>  Invalid ${roll}Roll Number </h4> </span>`;
+    }else if (sub1===''||sub1<=0) {
+        Msg.innerHTML=`<span> <h4> Invalid Maths Subject ${sub1} Marks </h4> </span>`;
+    }else if (sub2===''||sub2<=0) {
+        Msg.innerHTML=`<span> <h4> Invalid English Subject ${sub2} Marks </h4>  </span>`;
+    }else if (sub3===''||sub3<=0) {
+        Msg.innerHTML=`<span> <h4>  Invalid Social Studies Subject ${sub3} Marks </h4> </span>`;
+    }else if (sub4===''||sub4<=0) {
+        Msg.innerHTML=`<span> <h4> Invalid Science Subject ${sub4} Marks </h4> </span>`;
+    }else if(sub5===''||sub5<=0) {
+        Msg.innerHTML=`<span> <h4> Invalid Hindi Subject ${sub5} Marks </h4> </span>`;
     }else{
-        const BMI= (weight / ((height * height) / 10000)).toFixed(2);;
-        //results.innerHTML=`<span>${BMI}</span>`
-        if(BMI<18.6){
-            results.innerHTML=`<br><span> BMI value is ${BMI} Person is Under weight </span></br>`
-        }else if(BMI>=18.6 && BMI<24.9){
-            results.innerHTML=`<br><span> BMI value is ${BMI} Person is Normal weight </span></br>`
-        }else if(BMI>24.9){
-            results.innerHTML=`<br><span> BMI value is ${BMI} Person is Overweight </span></br>`
+        const StudMrks=sub1+sub2+sub3+sub4+sub5;
+        Marks.innerHTML=`<span> <h4>  Student Get ${StudMrks} Marks</h4> </span>`
+        const StudePrcnt=StudMrks/5;
+        Percentage.innerHTML=`<span> <h4>  Student Get ${StudePrcnt} % </h4></span>`
+
+        if (StudePrcnt>90) {
+            Msg.innerHTML=`<span> <h4> Student get A++ Grade </h4>> </span>`;
+        }else if(StudePrcnt<=90 && StudePrcnt>75){
+            Msg.innerHTML=`<span> <h4> Student get A Grade </h4> </span>`;
+        }else if(StudePrcnt<=75 && StudePrcnt>60){
+            Msg.innerHTML=`<span> <h4> Student get B Grade </h4> </span>`;
+        }else if(StudePrcnt<=60 && StudePrcnt>35){
+            Msg.innerHTML=`<span> <h4> Student get C Grade </h4> </span>`;
+        }else{
+            Msg.innerHTML=`<span> <h4> Student get F Grade </h4> </span>`;
         }
-        console.log(`${BMI}`);
-        
-       
-    }
-});
+}
+
+})

@@ -31,9 +31,9 @@ form.addEventListener('submit',function (frmsubmit) {
         Msg.innerHTML=`<span> <h4> Invalid Hindi Subject ${sub5} Marks </h4> </span>`;
     }else{
         const StudMrks=sub1+sub2+sub3+sub4+sub5;
-        Marks.innerHTML=`<span> <h4>  Student Get ${StudMrks} </h4> </span>`
+        Marks.innerHTML=`<span> <h4>  Student Get ${StudMrks} Marks</h4> </span>`
         const StudePrcnt=StudMrks/5;
-        Percentage.innerHTML=`<span> <h4>  Student Get ${StudePrcnt}</h4></span>`
+        Percentage.innerHTML=`<span> <h4>  Student Get ${StudePrcnt} % </h4></span>`
 
         if (StudePrcnt>90) {
             Msg.innerHTML=`<span> <h4> Student get A++ Grade </h4>> </span>`;
