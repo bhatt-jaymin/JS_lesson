@@ -1,0 +1,5 @@
+1. Data flow Analysis ===> Mastery in Data flow how it process ?
+2. 90/10 teaching ===> where you teach and How to Learn ?
+3. To Do Apps ===> Foundation program [Array with crud,]
+4. Ask question yourself 
+5. debugging and review your code and try to implement new methods.
