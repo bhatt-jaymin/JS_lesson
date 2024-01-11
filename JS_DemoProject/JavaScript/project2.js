@@ -3,49 +3,54 @@ const form=document.querySelector('form')
 form.addEventListener('submit',function (frmsubmit) {
     frmsubmit.preventDefault();
 
-    const name=document.querySelector('#name');
-    const roll=parseInt(document.querySelector('#Rollno').value);
-    const sub1=parseInt(document.querySelector('#sub1').value);
-    const sub2=parseInt(document.querySelector('#sub2').value);
-    const sub3=parseInt(document.querySelector('#sub3').value);
-    const sub4=parseInt(document.querySelector('#sub4').value);
-    const sub5=parseInt(document.querySelector('#sub5').value);
-    const Msg=document.querySelector('#Msg');
-    const Marks=document.querySelector('#Mrks');
-    const Percentage=document.querySelector('#prcnt');
+    const date=new Date()
+    const billDate=document.querySelector('#BillNo');
+    
+    const item1=parseInt(document.querySelector('#itm1').value);
+    const item2=parseInt(document.querySelector('#itm2').value);
+    const item3=parseInt(document.querySelector('#itm3').value);
+    const item4=parseInt(document.querySelector('#itm4').value);
+    const item5=parseInt(document.querySelector('#itm5').value);
+    const Msg=document.querySelector('#Msg1');
+    const Billing=document.querySelector('#Bill');
+    
+    billDate.innerHTML =`<span><h4>${date.getDate()}${date.getMonth() + 1}${date.getFullYear()+Math.floor(Math.random()*100000)}</h4></span>`;
 
-    if(name===''||name===0||name>=0||name<=0)
-    {
-        Msg.innerHTML=`<span> <h4> Invalid Name </h4> </span>`;
-    }else if (roll===''||roll<=0) {
-        Msg.innerHTML=`<span> <h4>  Invalid ${roll}Roll Number </h4> </span>`;
-    }else if (sub1===''||sub1<=0) {
-        Msg.innerHTML=`<span> <h4> Invalid Maths Subject ${sub1} Marks </h4> </span>`;
-    }else if (sub2===''||sub2<=0) {
-        Msg.innerHTML=`<span> <h4> Invalid English Subject ${sub2} Marks </h4>  </span>`;
-    }else if (sub3===''||sub3<=0) {
-        Msg.innerHTML=`<span> <h4>  Invalid Social Studies Subject ${sub3} Marks </h4> </span>`;
-    }else if (sub4===''||sub4<=0) {
-        Msg.innerHTML=`<span> <h4> Invalid Science Subject ${sub4} Marks </h4> </span>`;
-    }else if(sub5===''||sub5<=0) {
-        Msg.innerHTML=`<span> <h4> Invalid Hindi Subject ${sub5} Marks </h4> </span>`;
+    
+
+
+    if (item1===''||item1<=0) {
+        Msg.innerHTML=`<span> <h4> Invalid Sugar ${item1} Value </h4> </span>`;
+    }else if (item2===''||item2<=0) {
+        Msg.innerHTML=`<span> <h4> Invalid Oil ${item2} Value </h4> </span>`;
+    }else if (item3===''||item3<=0) {
+        Msg.innerHTML=`<span> <h4> Invalid Crockery Items ${item3} Value </h4> </span>`;
+    }else if (item4===''||item4<=0) {
+        Msg.innerHTML=`<span> <h4> Invalid Tea ${item4} Value </h4> </span>`;
+    }else if (item5===''||item5<=0) {
+        Msg.innerHTML=`<span> <h4> Invalid Soap ${item5} Value </h4> </span>`;
     }else{
-        const StudMrks=sub1+sub2+sub3+sub4+sub5;
-        Marks.innerHTML=`<span> <h4>  Student Get ${StudMrks} Marks</h4> </span>`
-        const StudePrcnt=StudMrks/5;
-        Percentage.innerHTML=`<span> <h4>  Student Get ${StudePrcnt} % </h4></span>`
-
-        if (StudePrcnt>90) {
-            Msg.innerHTML=`<span> <h4> Student get A++ Grade </h4>> </span>`;
-        }else if(StudePrcnt<=90 && StudePrcnt>75){
-            Msg.innerHTML=`<span> <h4> Student get A Grade </h4> </span>`;
-        }else if(StudePrcnt<=75 && StudePrcnt>60){
-            Msg.innerHTML=`<span> <h4> Student get B Grade </h4> </span>`;
-        }else if(StudePrcnt<=60 && StudePrcnt>35){
-            Msg.innerHTML=`<span> <h4> Student get C Grade </h4> </span>`;
+        const ItmTotal=item1+item2+item3+item4+item5;
+        const itmdiscnt=ItmTotal/5
+        Billing.innerHTML=`<span> <h4> Your Total Bill is ${ItmTotal} ₹ </h4> </span>`
+        
+        if (itmdiscnt>10000) {
+            
+            Msg.innerHTML=`<span> <h4> you get ${itmdiscnt} ₹ Discount and After discount your bill is ${ItmTotal-itmdiscnt} ₹ </h4>> </span>`;
+        }else if(itmdiscnt<=10000 && itmdiscnt>5000){
+            Msg.innerHTML=`<span> <h4> you get ${itmdiscnt} ₹ Discount and After discount your bill is ${ItmTotal-itmdiscnt} ₹ </h4> </span>`;
+        }else if(itmdiscnt<=5000 && itmdiscnt>1000){
+            Msg.innerHTML=`<span> <h4> you get ${itmdiscnt} ₹ Discount and After discount your bill is ${ItmTotal-itmdiscnt} ₹ </h4> </span>`;
+        }else if(itmdiscnt<1000){
+            Msg.innerHTML=`<span> <h4> you get ${itmdiscnt} ₹ Discount and After discount your bill is ${ItmTotal-itmdiscnt} ₹ </h4> </span>`;
         }else{
-            Msg.innerHTML=`<span> <h4> Student get F Grade </h4> </span>`;
+            Msg.innerHTML=`<span> <h4> you did not get any Discount </h4> </span>`;
         }
-}
+        
+} 
 
 })
+
+function resetpage(){  
+    window.location.reload()
+}
