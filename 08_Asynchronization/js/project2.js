@@ -12,5 +12,5 @@ const timedisp = document
 
 document.getElementById("stop").addEventListener("click", () => {
   clearInterval(IntervalId);
-  intervalId = null;
+  IntervalId = null;
 });
