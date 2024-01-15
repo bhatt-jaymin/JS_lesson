@@ -14,5 +14,5 @@ Outer()
 // ===> not share with inner other function
 // ====> not share with parent function
 
-//Closer Scope
+
 
