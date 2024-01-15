@@ -3,6 +3,15 @@ class User{
         this.email=email;
         this.password=password;
     }
+
+    get email(){
+        return this._email.toUpperCase()
+    }
+    set email(values){
+        this._email=values.toUpperCase()
+    }
+
+
     get password(){
         return this._password.toUpperCase()
     }
@@ -13,3 +22,4 @@ class User{
 
 const jai=new User('adc@yopmail.com','abcxyz')
 console.log(jai.password);
+console.log(jai.email);
