@@ -4,7 +4,7 @@ var userPassword='123456';
 accountCity='Surat';
 let accountState;
 
-// Not use var because issue in 
+// Not use var because issue in block scope and function scope
 //function scope and block scope.
 
 
