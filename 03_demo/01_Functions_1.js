@@ -23,12 +23,12 @@ U
 
 /*Method1
 
-function myAddition(num1,num2){
+function myAddition(num1,num2){ // Parameters
 
     console.log(num1+num2); 
 }
 
-const result= myAddition(10,20)
+const result= myAddition(10,20) // Argumnet(10,20)
 
 30
 */

@@ -31,6 +31,8 @@ sam@gl.com , welcome to website
 
 /* function myJSFunction(){
 console.log(this)
+
+print all structure of function
 }
 
 myJSFunction() */

@@ -6,7 +6,7 @@
 }
 
 
-function myNewCalculatePrice2(val1,val2,...num1){
+function myNewCalculatePrice2(val1,val2,...num1){  // ...num1 called rest operator or spread operator
 
     return num1
 }
