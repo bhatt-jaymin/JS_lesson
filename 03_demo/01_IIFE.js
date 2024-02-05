@@ -2,7 +2,7 @@
 
 (function startDBConnection(){  // Named IIFE
     console.log(`DB Connection in Process`);
-})();
+})(); // end function while using IIFE
 
 
 (()=>{ // Simple IIFE
